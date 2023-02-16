@@ -1,9 +1,9 @@
 #include<stdio.h>
 
 /**
- * main - entry point
- * Description : print a set of string
- * Return : return 0
+ * main-entry point
+ * Description: print a set of string
+ * Return: return 0
  */
 
 
