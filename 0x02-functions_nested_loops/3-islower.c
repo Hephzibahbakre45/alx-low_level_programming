@@ -5,7 +5,7 @@
  *
  * @c: contain value to be compared
  *
- * Return: 1 if lower, 0 if not
+ * Return: return 0
  *
  */
 
