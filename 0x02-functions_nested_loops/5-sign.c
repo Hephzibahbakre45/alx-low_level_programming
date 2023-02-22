@@ -2,14 +2,14 @@
 /**
  * print_sign- entry point
  *
- *@c: the int to print
+ *@n: the int to print
  *
  * Description: check for sign n
  *
  * Return: 1 if positive 0 if zero and -1 if negative
  */
 
-int print_sign(n)
+int print_sign(int n)
 
 {
 	if (n > 0)
