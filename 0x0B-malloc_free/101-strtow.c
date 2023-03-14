@@ -17,7 +17,7 @@ return (c == ' ');
  * @s: input string
  * @index: starting index
  * Return: index of first non-space char
-          7n j  */
+ */
 int startIndex(char *s, int index)
 {
 while (isSpace(*(s + index)))
