@@ -3,6 +3,7 @@ section .data
 	format db "%s\n", 0
 
 section .text
+	extern printf
 	global main
 
 main:
@@ -10,10 +11,8 @@ main:
 	mov rdi, format
 	mov rsi, hello
 	xor rax, rax
-
-	; call printf
 	call printf
 
 	; exit program
-	xor eax, eax
+	xor eax, 0
 	ret
