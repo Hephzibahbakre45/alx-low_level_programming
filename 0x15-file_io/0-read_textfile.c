@@ -9,7 +9,7 @@
  */
 
 
-size_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	char *buffer;
@@ -27,7 +27,7 @@ size_t read_textfile(const char *filename, size_t letters)
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
 	{
-		free(fd);
+		free(buffer);
 		return (0);
 	}
 	bytes_read = read(fd, buffer, letters);
@@ -36,7 +36,7 @@ size_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
-	bytes_written = write(STDOUT_FILENO, buffer, byte_read);
+	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 	if (bytes_written < 0 || bytes_written != bytes_read)
 
 		return (0);
