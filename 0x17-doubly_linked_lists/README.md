@@ -1,1 +1,1 @@
-this directory is about doubly linked list where i need to learn how to use it in C language
+This directory is about doubly linked list for alx project
